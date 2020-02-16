@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "AnimalShelter",
+"productVersion": "0.1",
+"dataUrl": "games.data.unityweb",
+"wasmCodeUrl": "games.wasm.code.unityweb",
+"wasmFrameworkUrl": "games.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0b1"
+}
