@@ -267,4 +267,6 @@ function createRow(index){
 function endGame(){
   menuText = "GAME OVER\nYour Score: " + score + "\nClick to retry";
   menu = true;
+  blocks.removeSprites();
+  hazards.removeSprites();
 }
