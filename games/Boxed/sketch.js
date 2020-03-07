@@ -76,7 +76,7 @@ function draw() {
           }
         }
         increment++;
-        increment = increment % 6;
+        increment = increment % 4;
         lastRow = millis();
         score++;
       }
@@ -135,7 +135,10 @@ function draw() {
 
   stroke("red");
   strokeWeight(10);
-  line(0,canvasFull-10,canvasFull,canvasFull-10);
+  line(10,canvasFull-10,canvasFull-10,canvasFull-10);
+  line(10,10,canvasFull-10,10);
+  line(10,10,10,canvasFull-10);
+  line(canvasFull-10,10,canvasFull,canvasFull-10);
 }
 
 function mouseClicked(){
