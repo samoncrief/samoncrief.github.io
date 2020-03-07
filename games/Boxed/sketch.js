@@ -124,21 +124,24 @@ function draw() {
     }
     //draw sprites
     drawSprites();
+
+    stroke("red");
+    strokeWeight(10);
+    line(10,canvasFull-10,canvasFull-10,canvasFull-10);
+    line(10,10,canvasFull-10,10);
+    line(10,10,10,canvasFull-10);
+    line(canvasFull-10,10,canvasFull-10,canvasFull-10);
+
+    fill(255);
+    stroke("black");
+    strokeWeight(1);
+
     rect(canvasFull/2-100,0,200,50);
     textAlign(CENTER);
     textSize(30);
     fill("red");
     text(score,canvasFull/2,30);
   }
-
-
-
-  stroke("red");
-  strokeWeight(10);
-  line(10,canvasFull-10,canvasFull-10,canvasFull-10);
-  line(10,10,canvasFull-10,10);
-  line(10,10,10,canvasFull-10);
-  line(canvasFull-10,10,canvasFull,canvasFull-10);
 }
 
 function mouseClicked(){
