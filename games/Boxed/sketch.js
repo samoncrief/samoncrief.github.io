@@ -4,11 +4,12 @@ var menu = true;
 var player = null;
 var row = null;
 var blocks;
+var hazards;
 var wall = false;
 var left = false;
 var ints10 = [0,1,2,3,4,5,6,7,8,9];
 var ints6 = [0,1,2,3,4,5];
-var optionsFull = [2,3,4,5,6,7,8];
+var optionsFull = [2,3,4,5,6,7,8,9,10,11];
 var optionsL = [2,3,7];
 var optionsR = [5,6,8];
 var menuText = "Welcome to Boxed!\nMove the mouse left and\nright to avoid obstacles\nClick to continue"; //git test
@@ -25,6 +26,7 @@ function setup() {
   player.addAnimation('normal', 'boxGreen.png');
 
   blocks = new Group();
+  hazards = new Group();
 }
 
 function draw() {
@@ -100,10 +102,22 @@ function draw() {
         }
       }
 
+      for(var i = 0; i < hazards.size(); i++){
+        if(player.velocity.x < 0 && hazards.toArray()[i].overlapPoint(player.position.x - 48,player.position.y)){
+          endGame();
+        }
+        else if(player.velocity.x > 0 && hazards.toArray()[i].overlapPoint(player.position.x + 48,player.position.y)){
+          endGame();
+        }
+      }
+
       //if player goes out of bounds, they lose
       if(player.position.y > canvasFull - 10 - 24){
-        menuText = "GAME OVER\nYour Score: " + score + "\nClick to retry";
-        menu = true;
+        endGame();
+      }
+
+      if(player.collide(hazards)){
+        endGame();
       }
 
       //draw time along top of canvas
@@ -146,6 +160,16 @@ function createBlock(indexB){
   return block;
 }
 
+function createHazard(indexB){
+  block = createSprite(indexB * 127,-127,127,127);
+  block.addAnimation('normal','boxRed.png');
+  block.velocity.y = 5;
+  block.immovable = true;
+  block.life = 200;
+  row = block;
+  return block;
+}
+
 function createRow(index){
   createBlock(0);
   createBlock(6);
@@ -158,16 +182,16 @@ function createRow(index){
       //leftmost exit
       blocks.add(createBlock(2));
       blocks.add(createBlock(3));
-      blocks.add(createBlock(4));
-      blocks.add(createBlock(5));
+      hazards.add(createHazard(4));
+      hazards.add(createHazard(5));
       wall = false;
       break;
     case 3:
       //left exit
       blocks.add(createBlock(1));
       blocks.add(createBlock(3));
-      blocks.add(createBlock(4));
-      blocks.add(createBlock(5));
+      hazards.add(createHazard(4));
+      hazards.add(createHazard(5));
       wall = false;
       break;
     case 4:
@@ -180,16 +204,16 @@ function createRow(index){
       break;
     case 5:
       //right exit
-      blocks.add(createBlock(1));
-      blocks.add(createBlock(2));
+      hazards.add(createHazard(1));
+      hazards.add(createHazard(2));
       blocks.add(createBlock(3));
       blocks.add(createBlock(5));
       wall = false;
       break;
     case 6:
       //rightmost exit
-      blocks.add(createBlock(1));
-      blocks.add(createBlock(2));
+      hazards.add(createHazard(1));
+      hazards.add(createHazard(2));
       blocks.add(createBlock(3));
       blocks.add(createBlock(4));
       wall = false;
@@ -210,7 +234,31 @@ function createRow(index){
       wall = true;
       left = false;
       break;
+    case 9:
+      //avoid left hazards
+      hazards.add(createHazard(1));
+      hazards.add(createHazard(2));
+      wall = false;
+      break;
+    case 10:
+      //avoid middle hazards
+      hazards.add(createHazard(2));
+      hazards.add(createHazard(3));
+      hazards.add(createHazard(4));
+      wall = false;
+      break;
+    case 11:
+      //avoid right hazards
+      hazards.add(createHazard(4));
+      hazards.add(createHazard(5));
+      wall = false;
+      break;
     default:
       //blocks.add(block);
+  }
+
+  function endGame(){
+    menuText = "GAME OVER\nYour Score: " + score + "\nClick to retry";
+    menu = true;
   }
 }
