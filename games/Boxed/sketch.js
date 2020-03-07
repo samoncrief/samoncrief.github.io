@@ -76,7 +76,7 @@ function draw() {
           }
         }
         increment++;
-        increment = increment % 8;
+        increment = increment % 6;
         lastRow = millis();
         score++;
       }
