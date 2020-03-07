@@ -256,9 +256,9 @@ function createRow(index){
     default:
       //blocks.add(block);
   }
+}
 
-  function endGame(){
-    menuText = "GAME OVER\nYour Score: " + score + "\nClick to retry";
-    menu = true;
-  }
+function endGame(){
+  menuText = "GAME OVER\nYour Score: " + score + "\nClick to retry";
+  menu = true;
 }
