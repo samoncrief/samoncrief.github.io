@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digibrawl</title>
+</head>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+<body>
+    <h1>Steven Moncrief - Game Design and Programming</h1>
+    <div class = "directory">
+        <h3>Directory</h3>
+        <table style = "width: 100%">
+            <tr>
+                <th><a href="index.html" style = "text-decoration: none; color: lightgrey"><div>About</div></a></th>
+                <th><a href="https://github.com/samoncrief/Code/" style = "text-decoration: none; color: lightgrey"><div>Programming</div></a></th>
+                <th><a href="gameDir.html" style = "text-decoration: none; color: lightgrey"><div>Design</div></a></th>
+            </tr>
+        </table>
+    </div>
+    <div class = "description">
+        <h1>Uncaged Paws</h1>
+        <div><table style = "width: 100%">
+            <tr>
+                <td><div>
+                    <ul>
+                        <li>Platform: Desktop Browser</li>
+                        <li>Engine: Unity</li>
+                        <li>Language: C#</li>
+                        <li>Duration: 4 months</li>
+                        <li>Initial Completion: May 2020</li>
+                        <li>Team Size: 3</li>
+                        <li>Technologies Used: Unity Engine</li>
+                    </ul></div>
+                </td>
+                <!--<td style="text-align:center"><img src = "boxed1.png" alt = "screenshot" style = "width: 50%"></td>-->
+            </tr>
+        </table></div>
+        <h3>Introduction</h3>
+        <p>Uncaged Paws is a matching game revolving around providing homes to dogs in an animal shelter, developed by myself, Simeon Narcis, and Hannah Wolin. In the game, players must get as many dogs adopted as possible against the stark odds facing shelter dogs by matching the dogs with visitor requests based on color-coded traits. With the semester passed, and development on this project winding down, this document will serve as an in the moment reflection on what was accomplished with this project from the perspective of its sole programmer and collaborator in its design.</p>
+        <h3>What Went Right</h3>
+        <p><ul>
+            <li>Regular Updates. During the development process, we were able to regularly produce new versions of the game for play testing on a near-weekly basis. While not every week was a major update, breaking up iteration in this way rather than deploying a new version “whenever we’re ready” really helped me to look at each week as a chance to make progress on the game.</li>
+            <li>Scope Containment. Another thing I am proud of with Uncaged Paws is the way we homed in on the core focus of the gameplay: matching dogs with people. Early on, there was some discussion about potentially expanding the game to a resource management simulation where dogs needed $X in supplies per day or improvements to the shelter were manually purchased with in-game money. We ended up not pursuing this line of development as to avoid overcomplicating the game loop, with new dogs/people arriving to the shelter every six seconds and the skewed biases in adoption rates/requests emerging as the central sources of conflict in the game.</li>
+        </ul></p>
+        <h3>What Went Wrong</h3>
+        <p><ul>
+            <li>In-Game Feedback. An aspect of the game that the team failed to effectively coordinate on was effective delivery of feedback to give to the player. For example, a dog being turned away only communicates the same feedback sound that is associated with a dog/person arriving at the shelter as the number of dogs rejected increments on screen. The team was unable to find a suitable way to handle that audio cue, among others, which led to that part of the game’s development getting sidelined as other aspects, either easier to solve or more critical, took priority in the development pipeline for the game.</li>
+            <li>Information Presentation. The presentation of statistics and real-world information in Uncaged Paws is lacking in impact, as the data is presented through text rather than any more intuitive infographic-like systems. This does extend to the gameplay in some extent, as requests are lines of text rather than succinct icons. This is a problem that was likely overlooked for too long due to a need to bring the game’s core functionality up to snuff through feature implementation and bug fixing, which led to less design and programming investment into better presentation.</li>
+        </ul></p>
+        <h3>Conclusion</h3>
+        <p>I feel that Uncaged Paws meets its intended goal of providing a game that demonstrates the very real problems faced by animal shelters, kill and no-kill alike, while communicating to the player how actions such as adopting dogs and donating resources can help to fight and contain the issue.</p>
+        <div style = "text-align: center; background-color:black;"><a href="games/AnimalShelter/index.html"><h1>Play Uncaged Paws!</h1></a></div>
+        
+    </div>
+    <div class = "contact">
+            <table style = "width: 100%;text-align:center;background-color: black">
+              <tr>
+                <td>Steven Moncrief</td>
+                <td>stevenamoncrief@gmail.com</td>
+                <td><a href="Resume.pdf">Resume</a></td>
+              </tr>
+            </table>
+          </div>
+</body>
+</html>
