@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digibrawl</title>
-</head>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-<body>
-    <h1>Steven Moncrief - Game Design and Programming</h1>
-    <div class = "directory">
-        <h3>Directory</h3>
-        <table style = "width: 100%">
-            <tr>
-                <th><a href="index.html" style = "text-decoration: none; color: lightgrey"><div>About</div></a></th>
-                <th><a href="https://github.com/samoncrief/Code/" style = "text-decoration: none; color: lightgrey"><div>Programming</div></a></th>
-                <th><a href="gameDir.html" style = "text-decoration: none; color: lightgrey"><div>Design</div></a></th>
-            </tr>
-        </table>
-    </div>
-    <div class = "description">
-        <h1>BOXED!</h1>
-        <div><table style = "width: 100%">
-            <tr>
-                <td><div>
-                    <ul>
-                        <li>Platform: Desktop Browser</li>
-                        <li>Engine: N/A</li>
-                        <li>Language: Javascript</li>
-                        <li>Duration: 1 month</li>
-                        <li>Initial Completion: December 2019</li>
-                        <li>Last Update: March 2020</li>
-                        <li>Team Size: 1</li>
-                        <li>Technologies Used: p5.js, p5.play</li>
-                    </ul></div>
-                </td>
-                <td style="text-align:center"><img src = "boxed1.png" alt = "screenshot" style = "width: 50%"></td>
-            </tr>
-        </table></div>
-        <p>As part of a university course, I was tasked with creating an interactive experience using the p5.js library plus one related library of my choice. Naturally, I used this opportunity to make a game. The result of this project: Boxed!</p>
-        <p>Boxed! is a simple game: move the mouse cursor to direct the green box around the screen in order to avoid obstacles. Using a procedural generation structure of my own design, the level is generated on the fly! The player's score is a direct measure of how long they were able to keep going through the level.</p>
-        <div>
-            <p>CHANGELOG</p>
-            <ul>
-                <li>March 2020: After some time away from this game, I felt it could use a few tweaks. The space between each row of obstacles is halved to add a bit more of a challenge. I've also added red boxes to make the game a little less repetitive, both in visuals and gameplay. Finally, the red line across the bottom is now part of a red box that goes around the screen. Boxes all the way down!</li>
-            </ul>
-        </div>
-
-        <div style = "text-align: center; background-color:black;"><a href="games/Boxed/index.html"><h1>Play Boxed!</h1></a></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boxed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .section-white {
+            background-color: #ffffff;
+            color: #000000;
+        }
         
-        <div class = "goals">
-            <h3>Design Goals</h3>
-            <ul>
-                <li>Create a game using only Javascript libraries and pictures of squares</li>
-                <li>Make a procedural generation system to generate levels during gameplay</li>
-            </ul>
+        .section-black {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <section class = "section section-black">
+        <div class = "container">
+            <h1 class="title section-black has-text-weight-bold" style = "text-align: center;">Boxed!</h1>
+            <div class = "columns">
+                <div class = "column">
+                    <ul>
+                        <li>- Platform: Desktop Browser</li>
+                        <li>- Language: Javascript</li>
+                        <li>- Duration: 1 month</li>
+                        <li>- Initial Completion: December 2019</li>
+                        <li>- Last Update: March 2020</li>
+                        <li>- Team Size: 1</li>
+                        <li>- Technologies Used: p5.js, p5.play</li>
+                    </ul>
+                </div>
+                <div class = "column">
+                    <img src = "boxed1.png" alt = "screenshot" style = "transform: rotate(0deg); width: 100%; position: relative;">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class = "contact">
-            <table style = "width: 100%;text-align:center;background-color: black">
-              <tr>
-                <td>Steven Moncrief</td>
-                <td>stevenamoncrief@gmail.com</td>
-                <td><a href="Resume.pdf">Resume</a></td>
-              </tr>
-            </table>
-          </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <p>As part of a university course, I was tasked with creating an interactive experience using the p5.js library plus one related library of my choice. Naturally, I used this opportunity to make a game. The result of this project: Boxed!</p>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <p>Boxed! is a simple game: move the mouse cursor to direct the green box around the screen in order to avoid obstacles. Using a procedural generation structure of my own design, the level is generated on the fly! The player's score is a direct measure of how long they were able to keep going through the level.</p>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <div style = "text-align: center; background-color:black;"><h1 class="title has-text-weight-bold"><a href="games/Boxed/index.html">Play Boxed!</a></h1></div>
+            <div>
+                <h3 class="title section-black has-text-weight-bold" style = "text-align: center;">Project Goals</h3>
+                <ul>
+                    <li>- Create a game using only Javascript libraries and pictures of squares</li>
+                    <li>- Make a procedural generation system to generate levels during gameplay</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column">
+                    <a href="index.html"><p class="has-text-centered has-text-weight-bold">Home</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-black">
+        <div class="container">
+            <p class="has-text-centered">Thanks to <a href="https://bulma.io/">Bulma</a> for being such a help in making this page!</p>
+        </div>
+    </section>
 </body>
 </html>

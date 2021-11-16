@@ -1,50 +1,106 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Steven Moncrief Programming and Design</title>
-</head>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-<body>
-  <h1>Steven Moncrief - Game Design and Programming</h1>
-  <div class = "directory">
-    <h3>Directory</h3>
-    <table style = "width: 100%">
-      <tr>
-          <th><a href="index.html" style = "text-decoration: none; color: lightgrey"><div>About</div></a></th>
-          <th><a href="https://github.com/samoncrief/Code/" style = "text-decoration: none; color: lightgrey"><div>Programming</div></a></th>
-          <th><a href="gameDir.html" style = "text-decoration: none; color: lightgrey"><div>Design</div></a></th>
-      </tr>
-    </table>
-  </div>
-  <div class = "aboutMe">
-    <div style = "text-align: center;"><img src="IMG_0991.jpg" alt="Me" style = "transform: rotate(0deg); width: 20%; position: relative; bottom: -20px; padding: 50px;"></div>
-    <h3>About Me</h3>
-    <p>If you’re reading this, welcome to my corner of the Web! This is where I compile the games I’ve made and link to a GitHub with code I'm at liberty to share. A long time ago, when everyone else was much larger, I decided I wanted to make games as a job. That was vague, so over the course of several years I decided that, of all the disciplines needed in game development, programming was my best shot at getting into the industry. Plus, even if I changed my mind about that, being a programmer would still be “pretty cool”.</p>
-      <p>I still dream of making games, and that drive has only grown stronger with time. For me, the satisfaction of entertaining others and creating content comes from knowing that I’ve made someone’s day better. I’m particularly attracted to development involving the things people use or play with, and strive to make the best experiences possible for others.</p>
-      <p>Now for some trivia and facts!</p>
-      <ul>
-        <li>I was born September 23, 1996 in Pasadena, Texas. Or, as I describe it to everyone else, “the other Pasadena”.</li>
-        <li>I was valedictorian of my high school class. That’s not the interesting part though; grades were so close that I only found out a day before graduation!</li>
-        <li>I am a dog person. Big dogs, small dogs, shaggy dogs; they’re all great to me.</li>
-        <li>My taste in music is eclectic; if there’s a better word for someone who listens to Queen, Barry White, Metallica, Ice Cube, and ABBA, I’ve yet to hear it.</li>
-        <li>It was my father who got me interested in games in the first place. Whatever I make, I credit him for putting me in that direction.</li>
-      </ul>
-  </div>
-  <div class = "contact">
-    <table style = "width: 100%;text-align:center;background-color: black">
-      <tr>
-        <td>Steven Moncrief</td>
-        <td>stevenamoncrief@gmail.com</td>
-        <td><a href="Resume.pdf">Resume</a></td>
-      </tr>
-    </table>
-  </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steven Moncrief's Portfolio Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .section-white {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .section-black {
+            background-color: #000000;
+            color: #ffffff;
+        }
 
-</body>
+        .t1 {
+          background: black;
+        }
 
+        .t1 img {
+          display: block;
+          opacity: 0.3;
+        }
+
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="section section-black">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+              <h1 class="title section-black has-text-weight-bold">Hello World!</h1>
+              <p class="subtitle section-black">My name is Steven Moncrief, and I'm a software developer with a focus on creating interactive experiences. I have significant experience in iOS app development with Swift and game development with the Unity Engine. As a developer, I would say that I'm most at home when I can sit down to a project with a set of clear goals and produce something great. That said, I look at moving out of my comfort zone as an opportunity to learn new technologies and techniques. My journey as a developer has only just started, and I can't wait to see what lies past the horizon.</p>
+              <p class="subtitle section-black">User-facing experiences present a unique kind of challenge in software development: Beyond the binary question of "Does it work?", such projects must also be optimized to work well in human hands. It is this human element that I find appealing as a developer.</p>
+          </div>
+          <div class="column">
+              <img src="portrait-wide.jpg" alt="Me" style = "transform: rotate(0deg); width: 100%; position: relative;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container">
+        <h1 class="title has-text-weight-bold" style = "text-align: center;">Projects</h1>
+        <div class="columns">
+          <div class="column container">
+            <a href="Digibrawl.html"><figure class = "t1"><img src="DBSample.png" alt="Digibrawl" style = "transform: rotate(0deg); width: 100%; position: relative;"><div class="centered has-text-weight-bold is-size-1-mobile is-size-3-tablet">Digibrawl</div></figure></a>
+          </div>
+          <div class="column container">
+            <a href="Boxed.html"><figure class = "t1"><img src="boxed2.png" alt="Boxed!" style = "transform: rotate(0deg); width: 100%; position: relative;"><div class="centered has-text-weight-bold is-size-1-mobile is-size-3-tablet">Boxed</div></figure></a>
+          </div>
+          <div class="column container">
+            <a href="Skating.html"><figure class = "t1"><img src="skating2.png" alt="Skating" style = "transform: rotate(0deg); width: 100%; position: relative;"><div class="centered has-text-weight-bold is-size-1-mobile is-size-3-tablet">Skating</div></figure></a>
+          </div>
+          <div class="column container">
+            <a href="UncagedPaws.html"><figure class = "t1"><img src="pawsSample.png" alt="Uncaged Paws" style = "transform: rotate(0deg); width: 100%; position: relative;"><div class="centered has-text-weight-bold is-size-1-mobile is-size-3-tablet">Uncaged Paws</div></figure></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-black">
+      <div class="container">
+        <h1 class="title section-black has-text-weight-bold">About Me</h1>
+        <p class="subtitle section-black">I started off my journey in software development as a kid who liked video games and wanted to understand how they worked. I must credit my father for introducing me to gaming, and by extension starting me down my eventual path. Math came easier to me than other subjects growing up, so I decided programming would be the best course of study given my interests. I would go on to graduate from the University of Miami in 2020 with a Bachelors of Science in Computer Science. Along the way, I was even able to please my inner child and make a few games!</p>
+        <p class="subtitle section-black">I still love games, but my attitude matured into something broader: Instead of just wanting to make something I liked, I want to make things that give other people the same kind of satisfaction I got out of playing games as a kid.</p>
+        <p class="subtitle section-black"></p>
+      </div>
+      <div class="columns">
+        <div class="column container">
+          <h1 class="title section-black has-text-weight-bold"></h1>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column container">
+          <h1 class="title section-black has-text-centered has-text-weight-bold">Links</h1>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <a href="https://www.linkedin.com/in/steven-moncrief-3a70291a4/"><p class="has-text-centered has-text-weight-bold">LinkedIn</p></a>
+        </div>
+        <div class="column">
+          <a href="mailto:stevenamoncrief@gmail.com"><p class="has-text-centered has-text-weight-bold">stevenamoncrief@gmail.com</p></a>
+        </div>
+        <div class="column">
+          <a href="Resume.pdf"><p class="has-text-centered has-text-weight-bold">Resume</p></a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-black">
+      <div class="container">
+        <p class="has-text-centered">Thanks to <a href="https://bulma.io/">Bulma</a> for being such a help in making this page!</p>
+      </div>
+    </section>
+  </body>
 </html>

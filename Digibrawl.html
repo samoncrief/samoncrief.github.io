@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digibrawl</title>
-</head>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
-<body>
-    <h1>Steven Moncrief - Game Design and Programming</h1>
-    <div class = "directory">
-        <h3>Directory</h3>
-        <table style = "width: 100%">
-            <tr>
-                <th><a href="index.html" style = "text-decoration: none; color: lightgrey"><div>About</div></a></th>
-                <th><a href="https://github.com/samoncrief/Code/" style = "text-decoration: none; color: lightgrey"><div>Programming</div></a></th>
-                <th><a href="gameDir.html" style = "text-decoration: none; color: lightgrey"><div>Design</div></a></th>
-            </tr>
-        </table>
-    </div>
-    <div class = "description">
-        <h1>DIGIBRAWL</h1>
-        <div><table style = "width: 100%">
-            <tr>
-                <td><div>
-                    <ul>
-                        <li>Platform: Desktop Browser</li>
-                        <li>Engine: Unity</li>
-                        <li>Language: C#</li>
-                        <li>Duration: 1 month</li>
-                        <li>Initial Completion: July 2019</li>
-                        <li>Last Update: March 2020</li>
-                        <li>Team Size: 1</li>
-                        <li>Technologies Used: Unity, Blender, GIMP</li>
-                    </ul></div>
-                </td>
-                <td style="text-align:center"><img src = "DB1.png" alt = "Soldier gameplay" style = "width: 50%"></td>
-            </tr>
-        </table></div>
-        <p>The year is 2109, and the face of cybersecurity is changing. As computer viruses grow more and more sophisticated, so too must the antivirus programs that combat them. In an experimental program, so-called "cyber-soldiers" enter the digital world and take the fight to the viruses themselves. To find the new generation of talent in the fight against cybercrime, the Digibrawl tournament has been launched, drawing prospective hopefuls from the world over to show off their skills.</p>
-        <p>Digibrawl is a top-down, single player shooter that pits the player against wave after wave of enemies. Players first choose a mode of play: Horde Mode sends enemies in large, predetermined groups at the player over the course of 15 distinct waves designed to acquaint them with the mechanics of the individual enemy types and how they work with one another; in Free Play, enemies spawn every 2 seconds indefinitely in a test to see how long the player can survive. After selecting one of three classes (Soldier, Hunter, or Bomber), players are dropped onto the battlefield and the game begins.</p>
-        <div style = "text-align:center"><img src = "DB2.png" alt = "Hunter gameplay" style = "width: 50%"></div>
-        <p>The game's three classes each offer a unique gameplay style to deal with threats. The Soldier mixes traditional isometric shooter mechanics with an ability known as the Firewall, a projected field that increases the damage of player projectiles shot through it. The Hunter is all about accuracy, with attacks that deal precise, high damage but at a low fire rate; the Power Shot ability not only adds even more damage to the mix, but allows the Hunter to circumvent limitations on fire rate with an extra attack. The Bomber can deal extremely high damage to multiple targets, but has a much lower effective range; to compensate, the Bomber can lay out mines in anticipation of enemies and use the Defragmentation Mine ability to group enemies together for easy multikills. The enemies also present unique challenges: Junkbots are among the fastest of the enemies and come in large numbers, but they are also very weak. RAMs have the highest durability of all enemies, but are quite slow. Spambots fire projectiles at the player instead of walking straight at them. Spybots are invisible until they come close to the player, making long-range attacks much harder to pull off against them.</p>
-        <div style = "text-align:center"><img src = "DB3.png" alt = "Bomber gameplay" style = "width: 50%"></div>
-        <div>
-            <p>CHANGELOG</p>
-            <ul>
-                <li>March 2020: As part of an update to how games are hosted on this page, Digibrawl is now playable via Unity Web Player! In addition, the level texture has been modified so that the cross in the center of the map is dark green as opposed to red; this will make red enemies and objects easier to see within this area.</li>
-            </ul>
-        </div>
-
-        <div style = "text-align: center; background-color:black;"><a href="games/Digibrawl/index.html"><h1>Play Digibrawl! (Unity Web Player)</h1></a></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .section-white {
+            background-color: #ffffff;
+            color: #000000;
+        }
         
-        <div class = "goals">
-            <h3>Design Goals</h3>
-            <ul>
-                <li>Develop an original idea from concept to distribution</li>
-                <li>Provide fun and engaging gameplay options in a replayable format</li>
-                <li>Use handmade 3D models in order to develop familiarity with the process of creating, animating, and implementing them for video games.</li>
-            </ul>
+        .section-black {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <section class = "section section-black">
+        <div class = "container">
+            <h1 class="title section-black has-text-weight-bold" style = "text-align: center;">Digibrawl</h1>
+            <div class = "columns">
+                <div class = "column">
+                    <ul>
+                        <li>- Platform: Desktop Browser</li>
+                        <li>- Engine: Unity</li>
+                        <li>- Language: C#</li>
+                        <li>- Duration: 1 month</li>
+                        <li>- Initial Completion: July 2019</li>
+                        <li>- Last Update: March 2020</li>
+                        <li>- Team Size: 1</li>
+                        <li>- Technologies Used: Unity, Blender, GIMP</li>
+                    </ul>
+                </div>
+                <div class = "column">
+                    <img src = "DB1.png" alt = "Soldier gameplay" style = "transform: rotate(0deg); width: 100%; position: relative;">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class = "contact">
-            <table style = "width: 100%;text-align:center;background-color: black">
-              <tr>
-                <td>Steven Moncrief</td>
-                <td>stevenamoncrief@gmail.com</td>
-                <td><a href="Resume.pdf">Resume</a></td>
-              </tr>
-            </table>
-          </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <p style = "font-style: italic;">The year is 2109, and the face of cybersecurity is changing. As computer viruses grow more and more sophisticated, so too must the antivirus programs that combat them. In an experimental program, so-called "cyber-soldiers" enter the digital world and take the fight to the viruses themselves. To find the new generation of talent in the fight against cybercrime, the Digibrawl tournament has been launched, drawing prospective hopefuls from the world over to show off their skills.</p>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <p>Digibrawl is a top-down, single player shooter that pits the player against wave after wave of enemies. Players first choose a mode of play: Horde Mode sends enemies in large, predetermined groups at the player over the course of 15 distinct waves designed to acquaint them with the mechanics of the individual enemy types and how they work with one another; in Free Play, enemies spawn every 2 seconds indefinitely in a test to see how long the player can survive. After selecting one of three classes (Soldier, Hunter, or Bomber), players are dropped onto the battlefield and the game begins.</p>
+        </div>
+    </section>
+    <section class = "section section-white">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column" style = "text-align: center;">
+                    <img src = "DB2.png" alt = "Hunter gameplay">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <p>The game's three classes each offer a unique gameplay style to deal with threats. The Soldier mixes traditional isometric shooter mechanics with an ability known as the Firewall, a projected field that increases the damage of player projectiles shot through it. The Hunter is all about accuracy, with attacks that deal precise, high damage but at a low fire rate; the Power Shot ability not only adds even more damage to the mix, but allows the Hunter to circumvent limitations on fire rate with an extra attack. The Bomber can deal extremely high damage to multiple targets, but has a much lower effective range; to compensate, the Bomber can lay out mines in anticipation of enemies and use the Defragmentation Mine ability to group enemies together for easy multikills. The enemies also present unique challenges: Junkbots are among the fastest of the enemies and come in large numbers, but they are also very weak. RAMs have the highest durability of all enemies, but are quite slow. Spambots fire projectiles at the player instead of walking straight at them. Spybots are invisible until they come close to the player, making long-range attacks much harder to pull off against them.</p>
+        </div>
+    </section>
+    <section class = "section section-white">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column" style = "text-align: center;">
+                    <img src = "DB3.png" alt = "Bomber gameplay">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <div style = "text-align: center; background-color:black;"><h1 class="title has-text-weight-bold"><a href="games/Digibrawl/index.html">Play Digibrawl! (Unity Web Player)</a></h1></div>
+            <div>
+                <h3 class="title section-black has-text-weight-bold" style = "text-align: center;">Project Goals</h3>
+                <ul>
+                    <li>- Develop an original idea from concept to distribution</li>
+                    <li>- Provide fun and engaging gameplay options in a replayable format</li>
+                    <li>- Use handmade 3D models in order to develop familiarity with the process of creating, animating, and implementing them for video games.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class = "section section-black">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column">
+                    <a href="index.html"><p class="has-text-centered has-text-weight-bold">Home</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-black">
+        <div class="container">
+          <p class="has-text-centered">Thanks to <a href="https://bulma.io/">Bulma</a> for being such a help in making this page!</p>
+        </div>
+    </section>
 </body>
 </html>
